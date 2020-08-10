@@ -1,0 +1,26 @@
+﻿@page
+@model M_CHAT.Pages.AñadirModel
+@{
+}
+
+
+<form method="POST">
+    <label>Nombre Completo</label>
+    <input asp-for="hijo.Nombre_Completo" type = "text"> <br><br>
+    <label>CURP</label>
+    <input asp-for="hijo.CURP" type = "text"> <br><br>
+    <label>Fecha de Nacimiento</label>
+    <input asp-for="hijo.Fecha_Nacimiento" type = "date"> <br><br>
+    <label>Edad</label>
+    <input asp-for="hijo.Edad" type = "text"> <br> <br>
+     <label>Genero</label>
+    <input asp-for="hijo.Genero" type = "text"> <br> <br>
+    <label>Nombre de Centro Educativo</label>
+    <input asp-for="centro.Nombre_Centro" type = "text"> <br> <br>
+    <label>Dereccion de Centro Educativo</label>
+    <input asp-for="centro.Direccion" type = "text"> <br> <br>
+    <label>Clave de centro Educativo</label>
+    <input asp-for="centro.Clave" type = "text"> <br> <br>
+   
+    <input asp-route-Id="@Model.tutor.Id" type = "submit" value="Registrar">
+</form>

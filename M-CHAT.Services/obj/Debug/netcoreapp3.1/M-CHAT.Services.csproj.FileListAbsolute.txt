@@ -1,0 +1,15 @@
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/bin/Debug/netcoreapp3.1/M-CHAT.Services.deps.json
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/bin/Debug/netcoreapp3.1/M-CHAT.Services.runtimeconfig.json
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/bin/Debug/netcoreapp3.1/M-CHAT.Services.runtimeconfig.dev.json
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/bin/Debug/netcoreapp3.1/M-CHAT.Services.dll
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/bin/Debug/netcoreapp3.1/M-CHAT.Services.pdb
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/bin/Debug/netcoreapp3.1/M-CHAT.Models.dll
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/bin/Debug/netcoreapp3.1/M-CHAT.Models.pdb
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/obj/Debug/netcoreapp3.1/M-CHAT.Services.csprojAssemblyReference.cache
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/obj/Debug/netcoreapp3.1/M-CHAT.Services.AssemblyInfoInputs.cache
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/obj/Debug/netcoreapp3.1/M-CHAT.Services.AssemblyInfo.cs
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/obj/Debug/netcoreapp3.1/M-CHAT.Services.csproj.CoreCompileInputs.cache
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/obj/Debug/netcoreapp3.1/M-CHAT.Services.csproj.CopyComplete
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/obj/Debug/netcoreapp3.1/M-CHAT.Services.dll
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/obj/Debug/netcoreapp3.1/M-CHAT.Services.pdb
+/home/hhhh/Documentos/M-CHAT/M-CHAT.Services/obj/Debug/netcoreapp3.1/M-CHAT.Services.genruntimeconfig.cache

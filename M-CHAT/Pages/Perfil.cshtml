@@ -1,0 +1,32 @@
+﻿@page
+@model M_CHAT.Pages.PerfilModel
+@{
+}
+
+<h4>Bienvenido @Model.tutor.Nombre</h4> <br><br><br>
+<form method="POST">
+    <table class="table table-info table-striped " style="margin-top:10%;">
+            <!--Head-->
+            <thead class="thead-dark">
+                <tr>
+                <th scope="col">Hijo</th>
+                <th scope="col">Estatus</th>
+                <th scope="col">Encuesta</th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                
+                @foreach (var item in @Model.hijos)
+                {
+                    <tr>
+                    <td>@Html.DisplayFor(m => item.Nombre_Completo)</td>
+                    <td>@Html.DisplayFor(m => item.Estado)</td>
+                    <td><input asp-page-handler="Cuestionario" type="submit"  asp-route-id = "@Model.tutor.Id" asp-route-id_Niño="@item.Id" value="Encuestar" class="btn btn-info"></td>
+                    </tr>
+                }
+            </tbody>
+    </table>
+    
+    <input type="submit"  asp-page-handler="Nuevo" asp-route-id="@Model.tutor.Id" class="btn btn-info" value="Nuevo">
+</form>

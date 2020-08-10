@@ -1,0 +1,33 @@
+﻿@page
+@model M_CHAT.Pages.INICIAR_SESIONModel
+@{
+    ViewData["Title"] = "INICIAR_SESION";
+}
+
+<h1>Iniciar Sesion</h1>
+<p>
+    <form method="POST">
+    <div class="card" style="width: 30rem;">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <img id="profile-img" class="profile-img-card" src="~/Images/Login.png" />
+                <div class="form-group">
+                    <br />
+                    <div class="form-group">
+                        <label  for="Email" class="text-uppercase">Correo electronico</label>
+                        <input asp-for="cuenta.Correo" type="text"  value="" placeholder="Escribir email" class="form-control" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Contraseña" class="text-uppercase">Contraseña</label>
+                        <input type="password" asp-for="cuenta.Contra" value="" placeholder="Escribir Contraseña" class="form-control" required />
+                    </div><br />
+                    <div class="d-flex justify-content-end">
+                        <a asp-page="/Registrarse" class="btn btn-danger m-1">Registrarse</a>
+                        <input type="submit" class="btn btn-outline-info m-1" value="Iniciar Sesion">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </form>

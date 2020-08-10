@@ -1,0 +1,37 @@
+@page
+@model CuestionarioModel
+@{
+    ViewData["Title"] = "Cuestionario";
+}
+
+ <form method = "Post">
+        <table class="table table-info table-striped " style="margin-top:10%;">
+            <!--Head-->
+            <thead class="thead-dark">
+                <tr>
+                <th scope="col">Pregunta</th>
+                <th scope="col">Si</th>
+                <th scope="col">No</th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                
+                @foreach (var item in @Model.preguntas)
+                {
+                    int cont = item.Id - 1;
+
+                    <tr>
+                    <td>@item.Id) @Html.DisplayFor(m => item.Texto)</td>
+                    <td><input name="Respuestas[@cont]" type="radio"  value=true></td>
+                    <td><input name="Respuestas[@cont]" type="radio"  value=false></td>
+                    </tr>
+                }
+            </tbody>
+    </table>
+    
+    <input type="submit" value="Terminar" class="btn btn-success"> 
+</form>
+
+
+

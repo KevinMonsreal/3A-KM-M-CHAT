@@ -1,0 +1,17 @@
+@page
+@model RegisterTutorModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<form method="POST">
+    <label>Correo</label>
+    <input asp-for="Tutor.Correo" type = "text"> <br><br>
+    <label>Contraseña</label>
+    <input asp-for="Tutor.Contra" type = "text"> <br><br>
+    <label>Nombre</label>
+    <input asp-for="Tutor.Nombre"type = "text"> <br><br>
+    <label>Direccion</label>
+    <input asp-for="Tutor.Direccion" type = "text"> <br> <br>
+    <input type = "submit" value="Registrar">
+</form>

@@ -1,0 +1,44 @@
+﻿@page
+@model MyApp.Namespace.AlertaModel
+@{
+}
+
+<body onload="generatedPdfFile();">
+<form method="POST">
+    <div class="align-content-center text-center">
+    <h3>El Registro ha sido exitoso</h3>
+    <input  type="submit"  asp-route-id = "@Model.tutor.Id" asp-route-id_Niño="@Model.hijo.Id" value="Regresar" class="btn btn-info">
+    </div>
+</form>
+</body>
+
+
+@section Scripts{
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/vfs_fonts.js"></script>
+
+
+<script type="text/javascript">
+
+    function generatedPdfFile()
+    {
+        
+         // create the  window before the callback
+        var docDefinition = 
+        { 
+            content:[
+                'Resultado: @Model.hijo.Estado',
+                '\n\n\nNo todos los casos en los que se fallen suficientes preguntas cumplen el',
+                'diagnostico del espectro autista,sin embargo, existe la posibilidad,por lo',
+                'que se justifica con la realizacion y valoracion medica, en este caso usted',
+                'puede acudir al Centro de Salud mas cercano a su domicilio. Para mayor ',
+                'informacion cominicarse a Medicina Distancia 5132 0909.'
+            ]
+        }
+    
+        pdfMake.createPdf(docDefinition).download();
+    }
+</script>
+}
